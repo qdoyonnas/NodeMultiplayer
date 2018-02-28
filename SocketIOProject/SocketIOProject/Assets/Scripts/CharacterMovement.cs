@@ -49,22 +49,39 @@ public class CharacterMovement : MonoBehaviour
 		if(h != 0f || v != 0f)
 		{
 			Rotating(h, v);
-		}
-
+            SendMove(h, v, transform.position);
+        }
 	}
 
-    public void NetworkMovement(Vector3 pos)
+    public void NetworkMovement(float h, float v, Vector3 pos)
     {
         transform.position = pos;
+
+        if (h != 0f || v != 0f)
+        {
+            NetworkRotate(h, v);
+        }
+
+        movement.Set(h, 0f, v);
+        movementSpeed = movement.magnitude;
+        Animating(movementSpeed);
     }
 
 	void Rotating(float h, float v)
 	{
-		Vector3 targetDirection = new Vector3(h, 0f, v);
+        Vector3 targetDirection = new Vector3(h, 0f, v);
 		Quaternion targetRotation = Quaternion.LookRotation (targetDirection, Vector3.up);
 		Quaternion newRotation = Quaternion.Lerp (GetComponent<Rigidbody>().rotation, targetRotation, turnSmoothing * Time.deltaTime);
 		GetComponent<Rigidbody>().MoveRotation(newRotation);
 	}
+
+    void NetworkRotate(float h, float v)
+    {
+        Vector3 targetDirection = new Vector3(h, 0f, v);
+        Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
+        Quaternion newRotation = Quaternion.Lerp(GetComponent<Rigidbody>().rotation, targetRotation, turnSmoothing * Time.deltaTime);
+        transform.rotation = targetRotation;
+    }
 
     //Regular Animation
     /*	void Animating(float h, float v)
@@ -87,5 +104,31 @@ public class CharacterMovement : MonoBehaviour
 
             anim.SetFloat("Speed", movementSpeed);
         }
+    }
+
+    public void SendMove(float h, float v, Vector3 pos)
+    {
+        string jsonObject = @"{";
+        jsonObject += VectorToJson("pos", pos);
+        jsonObject += @", " + VectorToJson("vel", h, 0, v);
+        jsonObject += @"}";
+
+        Debug.Log(jsonObject);
+
+        Network.socket.Emit("move", new JSONObject(jsonObject));
+    }
+    
+    string VectorToJson(string name, Vector3 vector)
+    {
+        string pattern = @"""" + name + @""":{""x"":""{0}"", ""y"":""{1}"", ""z"":""{2}""}";
+        Debug.Log(pattern);
+        string str = string.Format(pattern, vector.x, vector.y, vector.z);
+
+        return str;
+    }
+
+    string VectorToJson(string name, float x, float y, float z)
+    {
+        return VectorToJson(name, new Vector3(x, y, z));
     }
 }

@@ -1,4 +1,4 @@
-Initialize engine version: 5.6.0f3 (497a0f351392)
+Initialize engine version: 5.6.2f1 (a2913c821e27)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
@@ -17,7 +17,7 @@ Platform assembly: C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\UnityEn
 Loading C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.019 seconds
+- Completed reload, in  0.021 seconds
 Platform assembly: C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\System.dll (this message is harmless)
 Platform assembly: C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\Mono.Security.dll (this message is harmless)
@@ -25,13 +25,12 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.982194 ms
-2/22/2018 2:36:55 PM|Error|WebSocket.Send|A WebSocket connection isn't established.
+UnloadTime: 0.978878 ms
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: d440 -> priority: 1 
-  Thread -> id: bd80 -> priority: 1 
-  Thread -> id: dd60 -> priority: 1 
-  Thread -> id: db58 -> priority: 1 
+  Thread -> id: 52e2c -> priority: 1 
+  Thread -> id: 52e38 -> priority: 1 
+  Thread -> id: 52e34 -> priority: 1 
+  Thread -> id: 52e30 -> priority: 1 
 We are Connected
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -40,7 +39,7 @@ We are Connected
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Player Spawned!{"id":"H1XCsqhwf"}
+Player Spawned!{"id":"BkPc1uNdM"}
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -48,73 +47,823 @@ count 1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Initialize engine version: 5.6.0f3 (497a0f351392)
-GfxDevice: creating device client; threaded=1
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA Quadro M4000 (ID=0x13f1)
-    Vendor:   NVIDIA
-    VRAM:     3072 MB
-    Driver:   21.21.13.7735
-Begin MonoManager ReloadAssembly
-Platform assembly: C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.016 seconds
-Platform assembly: C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\System.dll (this message is harmless)
-Platform assembly: C:\repos\NodeMultiPlayer\Build\TestBuild_Data\Managed\Mono.Security.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
-<RI> Initializing input.
-<RI> Input initialized.
-<RI> Initialized touch support.
-UnloadTime: 1.025159 ms
-Player Spawned!{"id":"HkPxhq3PG"}
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-count 2
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-2/22/2018 2:37:18 PM|Error|WebSocket.Send|A WebSocket connection isn't established.
-Setting up 4 worker threads for Enlighten.
-  Thread -> id: d414 -> priority: 1 
-  Thread -> id: f2e4 -> priority: 1 
-  Thread -> id: d888 -> priority: 1 
-  Thread -> id: efa0 -> priority: 1 
-We are Connected
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-We are Connected
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Player Spawned!{"id":"H1XCsqhwf"}
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-count 1
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Player Spawned!{"id":"SJeknc2Df"}
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-count 2
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-player disconnected: {"id":"SJeknc2Df"}
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+"pos":{"x":"{0}", "y":"{1}", "z":"{2}"}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FormatException: Input string was not in a correct format.
+  at System.String.ParseFormatSpecifier (System.String str, System.Int32& ptr, System.Int32& n, System.Int32& width, System.Boolean& left_align, System.String& format) [0x00000] in <filename unknown>:0 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in <filename unknown>:0 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.VectorToJson (System.String name, Vector3 vector) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.SendMove (Single h, Single v, Vector3 pos) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.Move (Single h, Single v) [0x00000] in <filename unknown>:0 
+  at CharacterMovement.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+player disconnected: {"id":"BkPc1uNdM"}
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 

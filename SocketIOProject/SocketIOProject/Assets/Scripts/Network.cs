@@ -53,12 +53,14 @@ public class Network : MonoBehaviour
     void OnMove(SocketIOEvent e)
     {
         string id = e.data["id"].ToString();
-        
+
         GameObject player = players[id];
 
         CharacterMovement moveScript = player.GetComponent<CharacterMovement>();
-        Vector3 pos = new Vector3(GetFloatFromJson(e.data,"x"), 0.0f, GetFloatFromJson(e.data, "z"));
-        moveScript.NetworkMovement(pos);
+        Vector3 pos = new Vector3(GetFloatFromJson(e.data["pos"], "x"), 0.0f, GetFloatFromJson(e.data["pos"], "z"));
+        float h = GetFloatFromJson(e.data["vel"], "x");
+        float v = GetFloatFromJson(e.data["vel"], "z");
+        moveScript.NetworkMovement(h, v, pos);
     }
 
     float GetFloatFromJson(JSONObject data, string key)
